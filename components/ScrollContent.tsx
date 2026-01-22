@@ -5,21 +5,21 @@ import { motion, useScroll, useTransform } from "framer-motion";
 export default function ScrollContent() {
     const { scrollYProgress } = useScroll();
 
-    // Beat A: 0-15% (The Hook)
-    const opacityA = useTransform(scrollYProgress, [0, 0.1, 0.15], [1, 1, 0]);
-    const yA = useTransform(scrollYProgress, [0, 0.15], [0, -50]);
+    // Beat A: 0-10% (The Hook) - Faster start
+    const opacityA = useTransform(scrollYProgress, [0, 0.05, 0.1], [1, 1, 0]);
+    const yA = useTransform(scrollYProgress, [0, 0.1], [0, -50]);
 
-    // Beat B: 20-50% (The Features - Sensory)
-    const opacityB = useTransform(scrollYProgress, [0.15, 0.2, 0.45, 0.5], [0, 1, 1, 0]);
-    const yB = useTransform(scrollYProgress, [0.15, 0.5], [50, -50]);
+    // Beat B: 15-40% (The Features) - Compressed range
+    const opacityB = useTransform(scrollYProgress, [0.1, 0.15, 0.35, 0.4], [0, 1, 1, 0]);
+    const yB = useTransform(scrollYProgress, [0.1, 0.4], [50, -50]);
 
-    // Beat C: 60-80% (Testimonials)
-    const opacityC = useTransform(scrollYProgress, [0.55, 0.6, 0.75, 0.8], [0, 1, 1, 0]);
-    const yC = useTransform(scrollYProgress, [0.55, 0.8], [50, -50]);
+    // Beat C: 45-70% (Testimonials) - Earlier appearance
+    const opacityC = useTransform(scrollYProgress, [0.45, 0.5, 0.65, 0.7], [0, 1, 1, 0]);
+    const yC = useTransform(scrollYProgress, [0.45, 0.7], [50, -50]);
 
-    // Beat D: 85-100% (CTA)
-    const opacityD = useTransform(scrollYProgress, [0.8, 0.85, 1], [0, 1, 1]);
-    const yD = useTransform(scrollYProgress, [0.8, 1], [50, 0]);
+    // Beat D: 75-100% (CTA) - Final close
+    const opacityD = useTransform(scrollYProgress, [0.75, 0.8, 1], [0, 1, 1]);
+    const yD = useTransform(scrollYProgress, [0.75, 1], [50, 0]);
 
     return (
         <div className="relative z-10 w-full h-full pointer-events-none font-light">

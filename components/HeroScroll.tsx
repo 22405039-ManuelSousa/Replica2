@@ -135,7 +135,7 @@ export default function HeroScroll() {
     }, [images, smoothProgress, isLoaded]);
 
     return (
-        <div className="fixed top-0 left-0 w-full h-screen z-0">
+        <div className="fixed top-0 left-0 w-full h-[100dvh] z-0 overflow-hidden">
             <canvas ref={canvasRef} className="block w-full h-full" />
 
             {/* Loading State */}
