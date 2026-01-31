@@ -64,7 +64,6 @@ export default function HeroScroll() {
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             // Calculate current frame
-            // Map 0-1 to 0-(FRAME_COUNT-1)
             const frameIndex = Math.min(
                 FRAME_COUNT - 1,
                 Math.floor(progress * FRAME_COUNT)
@@ -73,10 +72,13 @@ export default function HeroScroll() {
             const img = images[frameIndex];
 
             if (img) {
-                // Draw image centered and cover
+                // Draw image centered and COVER (Fill screen)
                 const hRatio = canvas.width / img.width;
                 const vRatio = canvas.height / img.height;
+
+                // ORIGINAl LOGIC: Always use Max (Cover)
                 const ratio = Math.max(hRatio, vRatio);
+
                 const centerShift_x = (canvas.width - img.width * ratio) / 2;
                 const centerShift_y = (canvas.height - img.height * ratio) / 2;
 
@@ -92,7 +94,7 @@ export default function HeroScroll() {
                     img.height * ratio
                 );
             } else {
-                // Placeholder visualization
+                // Placeholder
                 ctx.fillStyle = "#fbbf24";
                 ctx.font = "40px serif";
                 ctx.textAlign = "center";
@@ -101,31 +103,22 @@ export default function HeroScroll() {
                     canvas.width / 2,
                     canvas.height / 2
                 );
-
-                // Draw a progress circle
-                ctx.beginPath();
-                ctx.arc(canvas.width / 2, canvas.height / 2 + 60, 20, 0, 2 * Math.PI * progress);
-                ctx.strokeStyle = "#fbbf24";
-                ctx.stroke();
             }
         };
 
         const handleResize = () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
-            // Re-render immediately on resize
             render(smoothProgress.get());
         };
 
         window.addEventListener("resize", handleResize);
         handleResize(); // Initial size
 
-        // Animation loop using Framer Motion's onChange to trigger renders only when needed
         const unsubscribe = smoothProgress.on("change", (latest) => {
             render(latest);
         });
 
-        // Initial render
         render(smoothProgress.get());
 
         return () => {
