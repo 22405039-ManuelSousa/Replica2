@@ -1,0 +1,71 @@
+
+Name                           Value
+----                           -----
+__PSLockDownPolicy             0
+ALLUSERSPROFILE                C:\ProgramData
+AMDRMSDKPATH                   C:\Program Files\AMD\RyzenMasterSDK\
+ANTIGRAVITY_AGENT              1
+ANTIGRAVITY_CLI_ALIAS          agy
+APPDATA                        C:\Users\manue\AppData\Roaming
+ChocolateyInstall              C:\ProgramData\chocolatey
+CHROME_CRASHPAD_PIPE_NAME      \\.\pipe\crashpad_29796_ZUZDLGAOCZYABQTU
+COLORTERM                      truecolor
+CommonProgramFiles             C:\Program Files (x86)\Common Files
+CommonProgramFiles(x86)        C:\Program Files (x86)\Common Files
+CommonProgramW6432             C:\Program Files\Common Files
+COMPUTERNAME                   ESCRITÓRIO
+ComSpec                        C:\WINDOWS\system32\cmd.exe
+DriverData                     C:\Windows\System32\Drivers\DriverData
+EFC_12888_814456460            1
+flutter                        C:\Users\franc\Development\flutter\bin
+FPS_BROWSER_APP_PROFILE_STRING Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRI… Default
+GIT_ASKPASS                    c:\Users\manue\AppData\Local\Programs\Antigravity\resources\app\extensions\git\dist\askpass.sh
+HOMEDRIVE                      C:
+HOMEPATH                       \Users\manue
+JAVA_HOME                      C:\Program Files\Eclipse Adoptium\jdk-17.0.14.7-hotspot
+LANG                           en_US.UTF-8
+LOCALAPPDATA                   C:\Users\manue\AppData\Local
+LOGONSERVER                    \\ESCRITÓRIO
+NUMBER_OF_PROCESSORS           16
+OculusBase                     C:\Program Files\Oculus\
+OneDrive                       C:\Users\manue\OneDrive
+ORIGINAL_XDG_CURRENT_DESKTOP   undefined
+OS                             Windows_NT
+PAGER                          cat
+Path                           C:\Program Files (x86)\PowerShell\7;C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Oculus\Support\oculus-runtime;…
+PATHEXT                        .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
+POWERSHELL_DISTRIBUTION_CHANN… MSI:Windows 10 Enterprise
+PROCESSOR_ARCHITECTURE         x86
+PROCESSOR_ARCHITEW6432         AMD64
+PROCESSOR_IDENTIFIER           AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD
+PROCESSOR_LEVEL                25
+PROCESSOR_REVISION             2102
+ProgramData                    C:\ProgramData
+ProgramFiles                   C:\Program Files (x86)
+ProgramFiles(x86)              C:\Program Files (x86)
+ProgramW6432                   C:\Program Files
+PSModulePath                   C:\Users\manue\Documents\PowerShell\Modules;C:\Program Files (x86)\PowerShell\Modules;c:\program files (x86)\powershell…
+PUBLIC                         C:\Users\Public
+SystemDrive                    C:
+SystemRoot                     C:\WINDOWS
+TEMP                           C:\Users\manue\AppData\Local\Temp
+TERM_PROGRAM                   vscode
+TERM_PROGRAM_VERSION           1.104.0
+TMP                            C:\Users\manue\AppData\Local\Temp
+USERDOMAIN                     ESCRITÓRIO
+USERDOMAIN_ROAMINGPROFILE      ESCRITÓRIO
+USERNAME                       manue
+USERPROFILE                    C:\Users\manue
+VBOX_HWVIRTEX_IGNORE_SVM_IN_U… 1
+VBOX_MSI_INSTALL_PATH          C:\Program Files\Oracle\VirtualBox\
+VSCODE_GIT_ASKPASS_EXTRA_ARGS  
+VSCODE_GIT_ASKPASS_MAIN        c:\Users\manue\AppData\Local\Programs\Antigravity\resources\app\extensions\git\dist\askpass-main.js
+VSCODE_GIT_ASKPASS_NODE        C:\Users\manue\AppData\Local\Programs\Antigravity\Antigravity.exe
+VSCODE_GIT_IPC_HANDLE          \\.\pipe\vscode-git-ee67614c20-sock
+VSCODE_INJECTION               1
+VSCODE_PYTHON_AUTOACTIVATE_GU… 1
+WEBVIEW2_ADDITIONAL_BROWSER_A… --disable-features=msSmartScreenProtection --edge-webview-enable-mojo-ipcz --edge-webview-foreground-boost-opt-in --use…
+WEBVIEW2_DEFAULT_BACKGROUND_C… 00000000
+windir                         C:\WINDOWS
+
